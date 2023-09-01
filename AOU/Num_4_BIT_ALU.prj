@@ -1,0 +1,2 @@
+vhdl work "../Num_4_BIT ALU_VHDL/Components.vhd"
+vhdl work "../Num_4_BIT ALU_VHDL/Num_4_BIT ALU.vhd"

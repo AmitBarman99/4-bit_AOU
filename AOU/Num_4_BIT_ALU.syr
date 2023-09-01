@@ -1,0 +1,398 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Num_4_BIT_ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Num_4_BIT_ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Num_4_BIT_ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : Num_4_BIT_ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd" into library work
+Parsing entity <NOT_gate>.
+Parsing architecture <behavioral> of entity <not_gate>.
+Parsing entity <AND2_gate>.
+Parsing architecture <behavioral> of entity <and2_gate>.
+Parsing entity <EXOR2_gate>.
+Parsing architecture <behavioral> of entity <exor2_gate>.
+Parsing entity <Multiplexer_2_1>.
+Parsing architecture <behavioral> of entity <multiplexer_2_1>.
+Parsing entity <Multiplexer_4_1>.
+Parsing architecture <behavioral> of entity <multiplexer_4_1>.
+Parsing entity <Adder_Full>.
+Parsing architecture <behavioral> of entity <adder_full>.
+Parsing VHDL file "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" into library work
+Parsing entity <Num_4_BIT_ALU>.
+Parsing architecture <structural> of entity <num_4_bit_alu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Num_4_BIT_ALU> (architecture <structural>) from library <work>.
+
+Elaborating entity <Adder_Full> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <EXOR2_gate> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <AND2_gate> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <NOT_gate> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <Multiplexer_2_1> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <Multiplexer_4_1> (architecture <behavioral>) from library <work>.
+WARNING:Xst:2972 - "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" line 333. All outputs of instance <C457> of block <Multiplexer_2_1> are unconnected in block <Num_4_BIT_ALU>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" line 343. All outputs of instance <C491> of block <Multiplexer_2_1> are unconnected in block <Num_4_BIT_ALU>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Num_4_BIT_ALU>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd".
+INFO:Xst:3210 - "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" line 299: Output port <COUT> of the instance <C048> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" line 333: Output port <Q> of the instance <C457> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Num_4_BIT ALU.vhd" line 343: Output port <Q> of the instance <C491> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Num_4_BIT_ALU> synthesized.
+
+Synthesizing Unit <Adder_Full>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Found 8x2-bit Read Only RAM for signal <_n0013>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Adder_Full> synthesized.
+
+Synthesizing Unit <EXOR2_gate>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Summary:
+Unit <EXOR2_gate> synthesized.
+
+Synthesizing Unit <AND2_gate>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Summary:
+	no macro.
+Unit <AND2_gate> synthesized.
+
+Synthesizing Unit <NOT_gate>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Summary:
+	no macro.
+Unit <NOT_gate> synthesized.
+
+Synthesizing Unit <Multiplexer_2_1>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Multiplexer_2_1> synthesized.
+
+Synthesizing Unit <Multiplexer_4_1>.
+    Related source file is "C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\Num_4_BIT ALU_VHDL\Components.vhd".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <Multiplexer_4_1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 30
+ 8x2-bit single-port Read Only RAM                     : 30
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 25
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Adder_Full>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0013> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(A,B,CIN)>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Adder_Full> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 30
+ 8x2-bit single-port distributed Read Only RAM         : 30
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 25
+# Xors                                                 : 8
+ 1-bit xor2                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C465>, <C483> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C465>, <C510> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C465>, <C537> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C455>, <C474> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C455>, <C501> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C455>, <C528> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C892>, <C1042> of unit <NOT_gate> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <Num_4_BIT_ALU>: instances <C492>, <C519> of unit <NOT_gate> are equivalent, second instance is removed
+
+Optimizing unit <Num_4_BIT_ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Num_4_BIT_ALU, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Num_4_BIT_ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 51
+#      LUT2                        : 13
+#      LUT3                        : 2
+#      LUT4                        : 4
+#      LUT5                        : 9
+#      LUT6                        : 22
+#      MUXF7                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 10
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   50  out of   2400     2%  
+    Number used as Logic:                50  out of   2400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     50
+   Number with an unused Flip Flop:      50  out of     50   100%  
+   Number with an unused LUT:             0  out of     50     0%  
+   Number of fully used LUT-FF pairs:     0  out of     50     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  21  out of    102    20%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 12.418ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 826 / 11
+-------------------------------------------------------------------------
+Delay:               12.418ns (Levels of Logic = 9)
+  Source:            iB0 (PAD)
+  Destination:       ooutput<7> (PAD)
+
+  Data Path: iB0 to ooutput<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.222   1.109  iB0_IBUF (iB0_IBUF)
+     LUT2:I0->O            2   0.203   0.981  C221/O1 (S031)
+     LUT6:I0->O            3   0.203   0.879  C218/Mram__n001312 (C218/Mram__n0013)
+     LUT3:I0->O            2   0.205   0.864  C276/Mram__n0013111 (C276/Mram__n00131)
+     LUT6:I2->O            2   0.203   0.961  C277/Mram__n001312 (C277/Mram__n0013)
+     LUT5:I0->O            2   0.203   0.981  C350/Mram__n0013111 (C350/Mram__n00131)
+     LUT6:I0->O            2   0.203   0.845  C351/Mram__n001311 (C351/Mram__n0013)
+     LUT6:I3->O            1   0.205   0.579  C932/Mmux_Q11 (ooutput_7_OBUF)
+     OBUF:I->O                 2.571          ooutput_7_OBUF (ooutput<7>)
+    ----------------------------------------
+    Total                     12.418ns (5.218ns logic, 7.200ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.29 secs
+ 
+--> 
+
+Total memory usage is 259644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

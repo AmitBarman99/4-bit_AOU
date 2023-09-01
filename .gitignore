@@ -1,0 +1,7 @@
+_ngo/
+_xmsgs/
+iseconfig/
+*.log
+*.cmd
+*.cmd_log
+isim/

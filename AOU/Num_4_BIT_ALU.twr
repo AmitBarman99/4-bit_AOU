@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Num_4_BIT_ALU.twx Num_4_BIT_ALU.ncd -o Num_4_BIT_ALU.twr
+Num_4_BIT_ALU.pcf -ucf pinout.ucf
+
+Design file:              Num_4_BIT_ALU.ncd
+Physical constraint file: Num_4_BIT_ALU.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iA0            |ooutput<0>     |   10.943|
+iA0            |ooutput<1>     |    9.682|
+iA0            |ooutput<2>     |   10.120|
+iA0            |ooutput<3>     |   11.713|
+iA0            |ooutput<4>     |   12.116|
+iA0            |ooutput<5>     |   11.948|
+iA0            |ooutput<6>     |   13.038|
+iA0            |ooutput<7>     |   12.188|
+iA0            |remainder<0>   |   10.289|
+iA0            |remainder<1>   |   10.278|
+iA0            |remainder<2>   |   10.504|
+iA1            |ooutput<0>     |   10.501|
+iA1            |ooutput<1>     |    9.772|
+iA1            |ooutput<2>     |   10.119|
+iA1            |ooutput<3>     |   11.371|
+iA1            |ooutput<4>     |   11.448|
+iA1            |ooutput<5>     |   11.280|
+iA1            |ooutput<6>     |   12.370|
+iA1            |ooutput<7>     |   11.520|
+iA1            |remainder<0>   |    9.847|
+iA1            |remainder<1>   |    9.139|
+iA1            |remainder<2>   |    9.709|
+iA2            |ooutput<0>     |   10.817|
+iA2            |ooutput<1>     |    8.977|
+iA2            |ooutput<2>     |    9.252|
+iA2            |ooutput<3>     |   12.102|
+iA2            |ooutput<4>     |   12.542|
+iA2            |ooutput<5>     |   12.374|
+iA2            |ooutput<6>     |   13.464|
+iA2            |ooutput<7>     |   12.614|
+iA2            |remainder<0>   |   10.163|
+iA2            |remainder<1>   |    9.646|
+iA2            |remainder<2>   |   10.025|
+iA3            |ooutput<0>     |   10.951|
+iA3            |ooutput<1>     |    9.243|
+iA3            |ooutput<2>     |    9.681|
+iA3            |ooutput<3>     |   10.933|
+iA3            |ooutput<4>     |   11.554|
+iA3            |ooutput<5>     |   11.386|
+iA3            |ooutput<6>     |   12.476|
+iA3            |ooutput<7>     |   11.626|
+iA3            |remainder<0>   |   10.297|
+iA3            |remainder<1>   |    9.589|
+iA3            |remainder<2>   |   10.159|
+iB0            |ooutput<0>     |   11.039|
+iB0            |ooutput<1>     |   10.221|
+iB0            |ooutput<2>     |   10.608|
+iB0            |ooutput<3>     |   12.414|
+iB0            |ooutput<4>     |   12.854|
+iB0            |ooutput<5>     |   12.686|
+iB0            |ooutput<6>     |   13.776|
+iB0            |ooutput<7>     |   12.926|
+iB0            |remainder<0>   |   10.385|
+iB0            |remainder<1>   |    9.677|
+iB0            |remainder<2>   |   10.247|
+iB1            |ooutput<0>     |   11.416|
+iB1            |ooutput<1>     |   11.320|
+iB1            |ooutput<2>     |   11.758|
+iB1            |ooutput<3>     |   13.010|
+iB1            |ooutput<4>     |   12.301|
+iB1            |ooutput<5>     |   12.133|
+iB1            |ooutput<6>     |   13.223|
+iB1            |ooutput<7>     |   12.373|
+iB1            |remainder<0>   |   10.762|
+iB1            |remainder<1>   |   10.054|
+iB1            |remainder<2>   |   10.624|
+iB2            |ooutput<1>     |    9.377|
+iB2            |ooutput<2>     |    9.815|
+iB2            |ooutput<3>     |   11.067|
+iB2            |ooutput<4>     |   10.390|
+iB2            |ooutput<5>     |   10.150|
+iB2            |ooutput<6>     |   10.954|
+iB2            |ooutput<7>     |   10.104|
+iB3            |ooutput<1>     |   10.818|
+iB3            |ooutput<2>     |   11.256|
+iB3            |ooutput<3>     |   12.508|
+iB3            |ooutput<4>     |   10.150|
+iB3            |ooutput<5>     |    9.910|
+iB3            |ooutput<6>     |   10.722|
+iB3            |ooutput<7>     |    9.872|
+iS0            |ooutput<0>     |    9.942|
+iS0            |ooutput<1>     |   10.208|
+iS0            |ooutput<2>     |   10.646|
+iS0            |ooutput<3>     |   11.898|
+iS0            |ooutput<4>     |    9.428|
+iS0            |ooutput<5>     |    7.914|
+iS0            |ooutput<6>     |    8.792|
+iS0            |ooutput<7>     |    9.077|
+iS1            |ooutput<0>     |   10.279|
+iS1            |ooutput<1>     |   10.549|
+iS1            |ooutput<2>     |   10.987|
+iS1            |ooutput<3>     |   12.239|
+iS1            |ooutput<4>     |    9.772|
+iS1            |ooutput<5>     |    8.034|
+iS1            |ooutput<6>     |    8.567|
+iS1            |ooutput<7>     |    9.051|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Aug 05 17:30:44 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 208 MB
+
+
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\ALU\Num_4_BIT_ALU.ncd
+OUTFILE=C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\ALU\Num_4_BIT_ALU.bit
+FAMILY=Spartan6
+PART=xc6slx4-3tqg144
+WORKINGDIR=C:\Users\student\Desktop\Amit Barman_2021ETB019\ALU\ALU
+LICENSE=WebPack
+USER_INFO=__0_0_0
